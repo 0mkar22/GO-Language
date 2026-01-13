@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "description": "coffee",
+    "amount": 50,
+    "category": "food",
+    "timestamp": "2026-01-13T11:07:45+05:30"
+  },
+  {
+    "id": 2,
+    "description": "snack",
+    "amount": 100,
+    "category": "food",
+    "timestamp": "2026-01-13T11:14:08+05:30"
+  },
+  {
+    "id": 3,
+    "description": "Lonavala",
+    "amount": 5000,
+    "category": "Trip",
+    "timestamp": "2026-01-13T11:14:57+05:30"
+  },
+  {
+    "id": 4,
+    "description": "pani puri",
+    "amount": 20,
+    "category": "food",
+    "timestamp": "2026-01-13T11:21:26+05:30"
+  }
+]
