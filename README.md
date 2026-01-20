@@ -5,3 +5,4 @@ This repository contains various Go-based utility applications.
 ## Projects
 - **[Go-Budget](./Go-Budget/):** A CLI expense tracker.
 - **[Unit-Converter](./Unit-Converter/):** A simple unit conversion tool.
+- **[Leet-Code](./Leet-Code):** Solved Leetcode problems
