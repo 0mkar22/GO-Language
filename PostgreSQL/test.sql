@@ -30,3 +30,22 @@ insert into car (make, model, price) values
 ('Toyota', 'Camry', 24000.00);
 insert into car (make, model, price) values
 ('Honda', 'Civic', 22000.00);
+
+
+UPDATE person SET car_id = 1 WHERE id = 2;
+UPDATE person SET car_id = 2 WHERE id = 3;
+
+SELECT person.first_name, person.last_name, car.make, car.model,car.price
+FROM person
+JOIN car ON person.car_id = car.id;
+
+SELECT person.first_name, person.last_name, car.make, car.model,car.price
+FROM person
+LEFT JOIN car ON person.car_id = car.id;
+
+SELECT person.first_name, person.last_name, car.make, car.model,car.price
+FROM person
+RIGHT JOIN car ON person.car_id = car.id;
+
+-- Exporting the result of a LEFT JOIN to a CSV file
+\copy (SELECT * FROM person LEFT JOIN car ON person.car_id = car.id) TO C:\Users\ADMIN\Desktop\Ellenox\PostgreSQL\result.csv DELIMITER ',' CSV HEADER
