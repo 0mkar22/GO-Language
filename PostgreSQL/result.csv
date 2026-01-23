@@ -1,0 +1,4 @@
+id,first_name,last_name,email,gender,date_of_birth,country_of_birth,car_id,id,make,model,price
+2,Jane,Smith,jane.smith@example.com,Female,1985-05-15,Canada,1,1,Toyota,Camry,24000.00
+3,Alice,Johnson,alice.johnson@example.com,Female,1992-07-20,UK,2,2,Honda,Civic,22000.00
+1,John,Doe,john.doe@example.com,Male,1990-01-01,USA,,,,,
