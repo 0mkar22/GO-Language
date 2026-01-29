@@ -1,12 +1,13 @@
 create table car (
-    person_uid UUID NOT NULL PRIMARY KEY,
+    car_uid UUID NOT NULL PRIMARY KEY,
     make VARCHAR(100) NOT NULL,
     model VARCHAR(100) NOT NULL,
-    price NUMERIC(19,2) NOT NULL
+    price NUMERIC(19,2) NOT NULL,
+	year INTEGER NOT NULL
 );
 
 create table person (
-	car_uid UUID NOT NULL PRIMARY KEY,
+	person_uid UUID NOT NULL PRIMARY KEY,
 	first_name VARCHAR(50) NOT NULL,
 	last_name VARCHAR(50) NOT NULL,
 	email VARCHAR(150),
@@ -26,10 +27,10 @@ insert into person (person_uid, first_name, last_name, email, gender, date_of_bi
 insert into person (person_uid, first_name, last_name, email, gender, date_of_birth, country_of_birth) values
 (uuid_genrate_v4(),'Alice', 'Johnson', 'alice.johnson@example.com', 'Female', '1992-07-20', 'UK');
 
-insert into car (car_uid, make, model, price) values
-(uuid_genrate_v4(),'Toyota', 'Camry', 24000.00);
-insert into car (car_uid, make, model, price) values
-(uuid_generate_v4(), 'Honda', 'Civic', 22000.00);
+insert into car (car_uid, make, model, price, year) values
+(uuid_genrate_v4(),'Toyota', 'Camry', 24000.00, 2020);
+insert into car (car_uid, make, model, price, year) values
+(uuid_generate_v4(), 'Honda', 'Civic', 22000.00, 2019);
 
 
 UPDATE person SET car_id = 1 WHERE id = 2;
